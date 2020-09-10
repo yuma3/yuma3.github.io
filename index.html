@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+
+    <!-- font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Easing Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+</head>
+<body id="#top">
+
+    <p class="load">
+      <img src="" alt="" />
+    </p>
+
+    <!-- content-wrapper -->
+    <div id="contents-wrapper">
+        <!-- header -->
+        <header id="header">
+            <div class="container">
+
+                <!-- nav-normal-view -->
+                <div class="normal-view">
+                    <h1 class="logo">
+                        <a href=""><img src="images/mainlogo.jpg" alt=""></a>
+                        <p class="name">Yuma Sawamura</p>
+                        <p class="job">This page is a Portfolio site made by a man who liked Python & Soccer. He is Salary man working in Tokyo.</p>
+                    </h1>
+
+                    <div class="normal-nav">
+                        <ul class="local-nav">
+                            <li class="lnav"><a href="">CONTACT</a></li>
+                        </ul>
+                        <nav>
+                            <ul class="global-nav">
+                                <li class="gnav"><a href="">HOME</a></li>
+                                <li class="gnav"><a href="">BLOG</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <p class="scroll-line"></p>
+                </div>
+
+                <!-- nav-small-view -->
+                <nav class="small-view">
+                    <div class="menu-btn">
+                        <a id="toggle" href="">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="small-nav">
+                        <ul class="global-nav">
+                            <li class="gnav1"><a href="">HOME</a></li>
+                            <li class="gnav2"><a href="">ABOUT</a></li>
+                            <li class="gnav3"><a href="">BLOG</a></li>
+                        </ul>
+                        <ul class="local-nav">
+                            <li class="lnav"><a href="">CONTACT</a></li>
+                            <li class="lnav-sns">
+                                <a href="" class="fab fa-twitter"></a>
+                                <a href="" class="fab fa-instagram"></a>
+                            </li>
+                            <li class="lnav-code">
+                                <a href="" class="fab fa-github"></a>
+                                <a href="" class="fab fa-docker"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- main content -->
+        <main class="main" id="#main">
+            <div class="container">
+                <section class="about" id="about">
+                      <div class="section-title">
+                          <p class="title-name">ABOUT</p>
+                      </div>
+                      <div class="section-content">
+                          <div class="profile">
+                              <p class="heading-title">profile</p>
+                              <ul>
+                                <li>澤村 勇磨　Sawamura Yuma</li>
+                                <li>22才</li>
+                                <li>2020年 青山学院大学 経営学部 卒業</li>
+                                <li>Pythonが好きな会社員</li>
+                              </ul>
+                              <p class="hobby"><span class="comment">「</span>趣味の海外サッカー観戦をきっかけにデータ分析の面白さを知り、プログラミングと統計学を学び始めました。<span class="comment">」</span></p>
+                          </div>
+
+                          <div class="section-heading">
+                                <p class="heading-title">使える言語・技術</p>
+                                <ul>
+                                    <div class="language-list">
+                                        <li class="language lan1">Python</li>
+                                        <li class="language lan2">Django</li>
+                                        <li class="language lan3">Dash</li>
+                                        <li class="language lan4">Plotly</li>
+                                        <li class="language lan6">Git</li>
+                                        <li class="language lan7">Docker</li>
+                                        <li class="language lan8">HTML</li>
+                                        <li class="language lan9">CSS</li>
+                                        <li class="language lan10">JavaScript</li>
+                                    </div>
+                                </ul>
+                          </div>
+                      </div>
+                </section>
+
+                <section id="works">
+                  <div class="inner">
+                    <div class="section-title">
+                        <p class="title-name">WORKS</p>
+                    </div>
+                    <div class="section-description">
+                        <p><span class="comment">「</span>Pyhtonを使ってWebアプリ開発、データ解析をしています。<span class="comment">」</span></p>
+                    </div>
+                    <div class="works">
+
+
+                        <div class="work">
+                            <figure>
+                                    <img id="work1" src="" alt="アプリのスクリーンショット" />
+                                    <figcaption>
+                                        <div class="site-name">SITE NAME</div>
+                                        <div class="site-tips">SITE TIPS</div>
+                                    </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="work">
+                            <figure>
+                                <a id="work2" href="">
+                                    <img src="" alt="アプリのスクリーンショット" />
+                                </a>
+                                    <figcaption>
+                                        <div class="site-name">SITE NAME</div>
+                                        <div class="site-tips">SITE TIPS</div>
+                                    </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="work">
+                            <figure>
+                                <a id="work3" href="">
+                                    <img src="" alt="アプリのスクリーンショット" />
+                                </a>
+                                    <figcaption>
+                                        <div class="site-name">SITE NAME</div>
+                                        <div class="site-tips">SITE TIPS</div>
+                                    </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="work">
+                            <figure>
+                                <a id="work4" href="">
+                                    <img src="" alt="アプリのスクリーンショット" />
+                                </a>
+                                    <figcaption>
+                                        <div class="site-name">SITE NAME</div>
+                                        <div class="site-tips">SITE TIPS</div>
+                                    </figcaption>
+                            </figure>
+                        </div>
+
+
+                    </div>
+
+
+                  </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="container">
+
+                <div class="totop">
+                    <p>
+                        <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
+                    </p>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </nav>
+
+
+                <p id="copyright"><small>&copy; yuma3 All rights reserved</small></p>
+
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="work-modal-wrapper" id="work1-modal">
+
+        <div class="modal">
+            <div class="close-modal">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-content">
+                <h2 class="modal-title">Blog</h2>
+                <div class="modal-info">
+                    <ul>
+                        <li>
+                            <p class="info-title">URL</p>
+                            <p class="info-description">SITE-URL</p>
+                        </li>
+                        <li>
+                            <p class="info-title">source code</p>
+                            <p class="info-description">SITE-URL</p>
+                        </li>
+                        <li>
+                            <p class="info-title">COMMENT</p>
+                            <p class="info-description">SITE-URL</p>
+                        </li>
+                        <li>
+                            <p class="info-title">Used Languages</p>
+                            <div class="info-description">
+                                <ul class="languages">
+                                    <li>
+                                        <!-- <img src="" alt=""> -->
+                                        <i class="fab fa-python"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-html5"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-css3-alt"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-js"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-github"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-aws"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-docker"></i>
+                                    </li>
+                                    <li>
+                                       <span>Django</span>
+                                    </li>
+                                    <li>
+                                       <span>Plotly</span>
+                                    </li>
+                                    <li>
+                                       <span>Dash</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+<script src="js/common.js"></script>
+<script src="js/load.js"></script>
+</body>
+</html>

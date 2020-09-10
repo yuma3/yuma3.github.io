@@ -1,0 +1,478 @@
+@charset "utf-8";
+
+/* common */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Grandstander", cursive, "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: 300;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+a:focus-visible {
+  outline: none;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* container */
+
+.container {
+    /* font-family:Inter, sans-serif; */
+    text-align:left;
+    max-width: 1170px;
+    width: 65%;
+    padding: 0 120px 0 140px;
+    margin: 0 auto;
+}
+
+
+
+
+/* ---------contents wrapper--------- */
+
+/* loading */
+
+#contents-wrapper {
+  /* opacity: 0; */
+  transition: all 0.7s;
+}
+#contents-wrapper.fadein {
+  opacity: 1;
+}
+.load {
+  position: fixed;
+  bottom: 50%;
+  right: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -20px;
+  margin-left: -20px;
+  text-align: center;
+  z-index: 5;
+}
+.load img {
+  width: 100%;
+  height: auto;
+}
+
+/* breadcrumbs */
+
+.breadcrumbs-area {
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+.breadcrumbs-list {
+  text-align: right;
+}
+.breadcrumbs-list li {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 1.4;
+}
+.breadcrumbs-list a {
+  font-family: quasimoda, sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+  padding-right: 24px;
+  color: #999999;
+}
+.breadcrumbs-list span {
+  color: #999999;
+}
+.breadcrumbs-list a::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 11px;
+  height: 5px;
+  margin-top: -2px;
+  background: url(../images/arrow03.svg) 0 0 no-repeat;
+  background-size: 11px 5px;
+}
+
+/* -------- header -------- */
+
+/* normal-view */
+#top .normal-view {
+  position: relative;
+}
+.normal-view .logo {
+  /* opacity: 0; */
+  margin-top: 58px;
+  height: 30px;
+  transition: all 2s;
+}
+.normal-view .logo.fade-in {
+  opacity: 1;
+}
+.logo a {
+  display: inline-block;
+  position: relative;
+  left: -10%;
+  margin-bottom: 16px;
+  width: 80px;
+  height: auto;
+}
+.logo .name {
+  text-align: center;
+  font-size: 23px;
+  letter-spacing: 7px;
+  margin-bottom: 18px;
+}
+.normal-view .normal-nav {
+  text-align: right;
+  font-size: 16px;
+  margin-top: -7px
+}
+.normal-nav .local-nav {
+  margin: 20px 0 188px;
+}
+.normal-nav .global-nav .gnav{
+  margin-bottom: 20px;
+}
+
+/* small-view */
+
+/* small-nav */
+
+.small-view .small-nav {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 85px 0 85px;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 9000;
+}
+.small-nav .global-nav {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 10px 0 40px 0;
+}
+.small-nav .global-nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 10px;
+  height: 1px;
+  margin-left: -4px;
+  background-color: #333333;
+}
+.small-nav .global-nav li,
+.small-nav .local-nav li {
+  margin-bottom: 30px;
+}
+.small-nav .global-nav li:last-child,
+.small-nav .sub-nav li:last-child {
+  margin-bottom: 0;
+}
+.small-nav .global-nav li a,
+.small-nav .local-nav li a {
+  display: inline-block;
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.2;
+  letter-spacing: 0.16em;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.small-nav .lnav-sns a,
+.small-nav .lnav-code a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.7s;
+}
+.small-nav .lnav-sns a:hover,
+.small-nav .lnav-code a:hover {
+  font-size: 20px;
+}
+.small-nav .lnav-sns a.fa-twitter,
+.small-nav .lnav-code a.fa-github {
+  margin-right: 15px;
+}
+
+/* menu-btn */
+
+.small-view .menu-btn {
+  position: absolute;
+  top: 38px;
+  right: 12%;
+  z-index: 10000;
+}
+.small-view .menu-btn #toggle {
+  opacity: 0;
+  transition: all 2s;
+}
+.small-view .menu-btn #toggle.fade-in {
+  opacity: 1;
+}
+
+/* menu-toggle */
+
+.small-view #toggle,
+.small-view #toggle span {
+  display: inline-block;
+  transition: all 0.5s;
+  box-sizing: border-box;
+}
+#toggle {
+  position: relative;
+  width: 23px;
+  height: 21px;
+}
+#toggle span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+#toggle span:nth-of-type(1) {
+  top: 7px;
+}
+#toggle span:nth-of-type(2) {
+  top: 14px;
+}
+#toggle span:nth-of-type(3) {
+  top: 21px;
+}
+#toggle.activate span:nth-of-type(1) {
+  transform: translateY(4px) rotate(-45deg);
+}
+#toggle.activate span:nth-of-type(2) {
+  transform: translateY(-3px) rotate(45deg);
+}
+#toggle.activate span:nth-of-type(3) {
+  transform: translateY(-10px) rotate(360deg);
+  display: none;
+}
+
+/* ------- main ------- */
+
+/* about */
+
+main #about {
+  padding: 120px 0 50px 0;
+}
+.section-title {
+  color: #333333;
+  border-bottom: 2px solid #333;
+  font-size: 18px;
+  margin: 30px auto;
+  padding: 4px 0px;
+  letter-spacing: 4px;
+  display: inline-block;
+}
+.section-title .title-name {
+    margin: 0;
+}
+.heading-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.profile ul {
+    padding: 10px;
+    width: 300px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+}
+.profile .hobby {
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 18px;
+}
+.about .language-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+/* works */
+
+main #works {
+  padding: 0 0 50px 0;
+}
+.section-description {
+  padding-bottom: 34px;
+}
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0 100px 0;
+}
+.work {
+  flex: auto;
+  margin: 15px 0;
+  padding: 0 15px;
+}
+
+/* modal */
+
+.work-modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+}
+.modal {
+  color: #ddd;
+  position: absolute;
+  top: 8%;
+  right: 0;
+  left: 0;
+  bottom: 8%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px 18px 40px;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 85px 0 85px;
+}
+.modal .close-modal {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  cursor: pointer;
+}
+.modal .modal-title {
+  display: inline-block;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 2px;
+  font-size: 21px;
+  margin: 28px 0 54px;
+}
+.modal .modal-info ul > li {
+  display: flex;
+  padding: 16px 8px;
+  border-bottom: 1px solid #333;
+}
+.modal-info ul > li .info-title {
+  width: 20%;
+  padding: 0 60px 0 30px;
+
+}
+.modal-info ul > li .info-description {
+  width: 80%;
+  text-align: left;
+}
+.modal-info .languages {
+  display: flex;
+}
+.modal-info .languages li {
+  border: 1px;
+}
+.modal-info ul > li i {
+  font-size: 34px;
+}
+
+span.comment {
+  font-size: 14px;
+}
+
+/* ------- footer ------- */
+
+footer {
+  padding: 0  0 20px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+footer .totop {
+  display: inline;
+  font-size: 20px;
+  transition: all 0.4s;
+  text-align: center;
+}
+footer .totop:hover{
+  font-size: 32px
+}
+footer .footer-nav {
+  margin: 80px 0 50px 0;
+  padding: 20px 0;
+}
+.footer-nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: 0 auto;
+}
+.footer-nav ul > li {
+  margin-right: 8px;
+}
+footer #copyright {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* resposibe settings */
+
+@media screen and (max-width:780px){
+
+  .small-view .menu-btn #toggle {
+    opacity: 1;
+  }
+  .normal-view .normal-nav {
+    opacity: 0;
+  }
+
+  footer .totop, #copyright{
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+
+  }
+  .footer-nav ul li {
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+  }
+}
