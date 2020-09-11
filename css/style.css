@@ -44,9 +44,9 @@ img {
     /* font-family:Inter, sans-serif; */
     text-align:left;
     max-width: 1170px;
-    width: 65%;
-    padding: 0 120px 0 140px;
+    width: 75%;
     margin: 0 auto;
+
 }
 
 
@@ -147,6 +147,11 @@ img {
   letter-spacing: 7px;
   margin-bottom: 18px;
 }
+.logo .job {
+  width: 88%;
+  text-align: center;
+  margin: 0 auto;
+}
 .normal-view .normal-nav {
   text-align: right;
   font-size: 16px;
@@ -232,12 +237,12 @@ img {
 .small-view .menu-btn {
   position: absolute;
   top: 38px;
-  right: 12%;
+  right: 20%;
   z-index: 10000;
 }
 .small-view .menu-btn #toggle {
   opacity: 0;
-  transition: all 2s;
+  transition: all 0.8s;
 }
 .small-view .menu-btn #toggle.fade-in {
   opacity: 1;
@@ -451,19 +456,23 @@ footer #copyright {
 
 /* resposibe settings */
 
-@media screen and (max-width:780px){
+@media screen and (max-width:768px){
 
+  .small-view .menu-btn {
+  position: absolute;
+  top: 38px;
+  right: 28%;
+  z-index: 10000;
+  }
   .small-view .menu-btn #toggle {
     position: absolute;
     top: 0;
     right: -100px;
     opacity: 1;
-
   }
   .normal-view .normal-nav {
     opacity: 0;
   }
-
   footer .totop, #copyright{
     margin: 0 auto;
     text-align: center;
@@ -479,4 +488,17 @@ footer #copyright {
     width: 70px;
     text-align: center;
   }
+}
+@media screen and (min-width: 769px) and (max-width:1024px){
+
+  .small-view .menu-btn #toggle {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    opacity: 1;
+  }
+  .normal-view .normal-nav {
+    opacity: 0;
+  }
+
 }
