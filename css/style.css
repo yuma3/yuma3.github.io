@@ -311,12 +311,12 @@ main #about {
 .profile ul {
     padding: 10px;
     width: 300px;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-bottom: 8px;
 }
 .profile .hobby {
     padding: 10px;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-bottom: 18px;
 }
 .about .language-list {
@@ -324,7 +324,7 @@ main #about {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 10px;
     padding: 10px;
-    margin-left: 30px;
+    margin-left: 0px;
 }
 
 /* works */
@@ -454,7 +454,11 @@ footer #copyright {
 @media screen and (max-width:780px){
 
   .small-view .menu-btn #toggle {
+    position: absolute;
+    top: 0;
+    right: -100px;
     opacity: 1;
+
   }
   .normal-view .normal-nav {
     opacity: 0;
